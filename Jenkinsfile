@@ -8,9 +8,9 @@ pipeline {
                 sh "mvn -DskipTests clean package"
             }
         }
-        stage('Test') {
+        stage('Install') {
             steps {
-                sh "mvn test"
+                sh "mvn install"
             }
         }
     }
